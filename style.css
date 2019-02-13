@@ -1,0 +1,670 @@
+ html, body {
+     margin: 0;
+     height: 100%;
+}
+ body{
+     background: black;
+     color: white;
+}
+ .grid-container1 {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 700px;
+     background-color: black;
+     padding: 10px;
+     grid-gap: 10px;
+}
+ .grid-container2 {
+     display: grid;
+     grid-template-columns: 1fr 2fr 1fr;
+     background-color: black;
+     padding: 10px;
+     grid-gap: 10px;
+}
+ .grid-container3 {
+     display: grid;
+     grid-template-columns: 1fr;
+     background-color: black;
+     padding: 10px;
+     grid-gap: 10px;
+}
+ .grid-container4 {
+     display: grid;
+     grid-template-rows: 1fr;
+     background-color: black;
+     padding: 10px;
+     grid-gap: 10px;
+}
+ .project-container {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-column-start: 1;
+     grid-column-end: 4;
+     background: #2193b0;
+    /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+    /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #6dd5ed, #2193b0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     padding: 10px;
+     grid-gap: 10px;
+}
+ .wide-column {
+     background: #2193b0;
+    /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+    /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #6dd5ed, #2193b0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     border: 1px solid rgba(0, 0, 0, 0.8);
+     padding: 20px;
+     font-size: 30px;
+     text-align: center;
+     grid-column-start: 1;
+     grid-column-end: 3;
+}
+ .project-item {
+     background-color: rgba(255, 255, 255, 0.8);
+     border: 1px solid rgba(0, 0, 0, 0.8);
+     padding: 20px;
+     font-size: 30px;
+     text-align: center;
+}
+ .grid-item {
+     background: #2193b0;
+    /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+    /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #6dd5ed, #2193b0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     border: 1px solid rgba(0, 0, 0, 0.8);
+     padding: 20px;
+     font-size: 30px;
+     text-align: center;
+}
+ .project-portfolio {
+     background-color: rgba(255, 255, 255, 0.8);
+     border: 1px solid rgba(0, 0, 0, 0.8);
+     padding: 20px;
+     font-size: 30px;
+     text-align: center;
+     grid-column-start: 1;
+     grid-column-end: 4;
+}
+ .hero-container {
+     grid-column-start: 1;
+     grid-column-end: 4;
+}
+ main{
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+     font-family: 'Expletus Sans','Comic Sans';
+}
+ .hero{
+     width: 100%;
+    /*max-width: 1200px;
+    */
+     height: 100%;
+     text-align: center;
+     margin: 0 auto;
+     position: relative;
+     color: black;
+     background-image: url("https://webdesignerdepot.s3.amazonaws.com/default-images/25.jpg");
+}
+ .hero h1{
+     font-size: 4.1em;
+     margin: auto;
+     position: absolute;
+     top: 40%;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     z-index: 1;
+}
+ .hero p{
+     font-size: 3em;
+     margin: auto;
+     position: absolute;
+     top: 50%;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     z-index: 1;
+}
+ .hero button{
+     margin: auto;
+     position: relative;
+     top: 60%;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     z-index: 1;
+}
+ button:hover,.button:hover {
+     background-color: #008CBA;
+     color: white;
+     opacity: 1;
+}
+ button,.button {
+     background-color: white;
+    /* Green */
+     border: none;
+     color: black;
+     padding: 16px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 4px 2px;
+     -webkit-transition-duration: 0.4s;
+    /* Safari */
+     transition-duration: 0.4s;
+     cursor: pointer;
+     opacity: 0.6;
+     border: 2px solid black;
+}
+ .hero img{
+     width: 100%;
+}
+ #np-icon {
+     width: 100px;
+     height: 100px;
+     position: absolute;
+     top: 20%;
+     left: 45%;
+     right: 0;
+     bottom: 0;
+     z-index: 1;
+     margin-right: -50%;
+}
+ .bar{
+     width: 100%;
+     height: 40%;
+     background:white;
+     opacity: 0.5;
+     position: absolute;
+     z-index: 0;
+     left: 0;
+     top: 30%;
+     -ms-transform-origin: 100% 0%;
+     -webkit-transform-origin: 100% 0%;
+     transform-origin: 100% 0%;
+     -webkit-animation: roll-out 1.2s ease-out ;
+     -moz-animation: roll-out 1.2s ease-out ;
+     animation: roll-out 1.2s ease-out ;
+}
+ .hero h1, .hero p,#np-icon,.hero button{
+     -webkit-animation: scale-in 1.3s ease-out;
+     -moz-animation: scale-in 1.3s ease-out;
+     animation: scale-in 1.3s ease-out;
+}
+ .overlay {
+     height: 100%;
+     width: 0;
+     position: fixed;
+     z-index: 3;
+     top: 0;
+     left: 0;
+     background-color: rgb(0,0,0);
+     background-color: rgba(0,0,0, 0.9);
+     overflow-x: hidden;
+     transition: 0.5s;
+}
+ .overlay-content {
+     position: relative;
+     top: 25%;
+     width: 100%;
+     text-align: center;
+     margin-top: 30px;
+}
+ .overlay a {
+     padding: 8px;
+     text-decoration: none;
+     font-size: 36px;
+     color: #818181;
+     display: block;
+     transition: 0.3s;
+}
+ .overlay a:hover, .overlay a:focus {
+     color: #f1f1f1;
+}
+ .overlay .closebtn {
+     position: absolute;
+     top: 20px;
+     right: 45px;
+     font-size: 60px;
+}
+ .profile-card {
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     width: 100%;
+     height: 100%;
+     margin: auto;
+     text-align: center;
+     font-family: arial;
+     background-color: white;
+     color: black;
+}
+ .title {
+     color: grey;
+     font-size: 18px;
+}
+ a {
+     text-decoration: none;
+     font-size: 22px;
+     color: black;
+}
+ button:hover, a:hover {
+     opacity: 0.7;
+}
+ .skillbar {
+     position:relative;
+     display:block;
+     margin-bottom:15px;
+     width:100%;
+     background:#eee;
+     height:35px;
+     border-radius:3px;
+     -moz-border-radius:3px;
+     -webkit-border-radius:3px;
+     -webkit-transition:4s linear;
+     -moz-transition:0.4s linear;
+     -ms-transition:0.4s linear;
+     -o-transition:0.4s linear;
+     transition:0.4s linear;
+     -webkit-transition-property:width, background-color;
+     -moz-transition-property:width, background-color;
+     -ms-transition-property:width, background-color;
+     -o-transition-property:width, background-color;
+     transition-property:width, background-color;
+}
+ .skillbar-title {
+     position:absolute;
+     top:0;
+     left:0;
+     width:110px;
+     font-weight:bold;
+     font-size:13px;
+     color:#ffffff;
+     background:#6adcfa;
+     -webkit-border-top-left-radius:3px;
+     -webkit-border-bottom-left-radius:4px;
+     -moz-border-radius-topleft:3px;
+     -moz-border-radius-bottomleft:3px;
+     border-top-left-radius:3px;
+     border-bottom-left-radius:3px;
+}
+ .skillbar-title span {
+     display:block;
+     background:rgba(0, 0, 0, 0.1);
+     padding:0 20px;
+     height:35px;
+     line-height:35px;
+     -webkit-border-top-left-radius:3px;
+     -webkit-border-bottom-left-radius:3px;
+     -moz-border-radius-topleft:3px;
+     -moz-border-radius-bottomleft:3px;
+     border-top-left-radius:3px;
+     border-bottom-left-radius:3px;
+}
+ .skillbar-bar {
+     height:35px;
+     width:0px;
+     background:#6adcfa;
+     border-radius:3px;
+     -moz-border-radius:3px;
+     -webkit-border-radius:3px;
+}
+ .skill-bar-percent {
+     position:absolute;
+     right:10px;
+     top:0;
+     font-size:11px;
+     height:35px;
+     line-height:35px;
+     color:#ffffff;
+     color:rgba(0, 0, 0, 0.4);
+}
+ .container-proj {
+     position: relative;
+     width: 100%;
+}
+ .image {
+     opacity: 1;
+     display: block;
+     width: 100%;
+     height: auto;
+     transition: .5s ease;
+     backface-visibility: hidden;
+}
+ .middle {
+     transition: .5s ease;
+     opacity: 0;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+     text-align: center;
+}
+ .container-proj:hover .image {
+     opacity: 0.3;
+}
+ .container-proj:hover .middle {
+     opacity: 1;
+}
+/* Slideshow container */
+ .slideshow-container {
+     position: relative;
+     background: white;
+     color: black;
+}
+/* Slides */
+ .mySlides {
+     display: none;
+     padding: 80px;
+     text-align: center;
+}
+/* Next & previous buttons */
+ .prev, .next {
+     cursor: pointer;
+     position: absolute;
+     top: 50%;
+     width: auto;
+     margin-top: -30px;
+     padding: 16px;
+     color: #888;
+     font-weight: bold;
+     font-size: 20px;
+     border-radius: 0 3px 3px 0;
+     user-select: none;
+}
+/* Position the "next button" to the right */
+ .next {
+     position: absolute;
+     right: 0;
+     border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+ .prev:hover, .next:hover {
+     background-color: rgba(0,0,0,0.8);
+     color: white;
+}
+/* The dot/bullet/indicator container */
+ .dot-container {
+     text-align: center;
+     padding: 20px;
+     background: black;
+}
+/* The dots/bullets/indicators */
+ .dot {
+     cursor: pointer;
+     height: 15px;
+     width: 15px;
+     margin: 0 2px;
+     background-color: #bbb;
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+}
+/* Add a background color to the active dot/circle */
+ .active, .dot:hover {
+     background-color: #717171;
+}
+/* Add an italic font style to all quotes */
+ q {
+    font-style: italic;
+}
+/* Add a blue color to the author */
+ .author {
+    color: cornflowerblue;
+}
+ input[type=text], select, textarea {
+     width: 100%;
+     padding: 12px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+     margin-top: 6px;
+     margin-bottom: 16px;
+     resize: vertical;
+}
+ input[type=submit] {
+     background-color: #4CAF50;
+     color: white;
+     padding: 12px 20px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+}
+ input[type=submit]:hover {
+     background-color: #45a049;
+}
+ footer {
+     width: 100%;
+     height: 80px;
+     background: #2193b0;
+    /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+    /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #6dd5ed, #2193b0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     padding-top: 10px;
+     text-align: center;
+}
+ .overlay-text {
+     color: black;
+}
+/*==========SCALE-IN==========*/
+ @-webkit-keyframes scale-in {
+     0% {
+        transform: scale(10, 10);
+         opacity: 0;
+    }
+     100% {
+        transform: scale(1, 1);
+         opacity: 1;
+    }
+}
+ @keyframes scale-in {
+     0% {
+        transform: scale(10, 10);
+         opacity: 0;
+    }
+     100% {
+        transform: scale(1, 1);
+         opacity: 1;
+    }
+}
+/*==========ROLL-OUT==========*/
+ @-webkit-keyframes roll-out {
+     0% {
+        width: 0;
+    }
+     100% {
+        width: 100%;
+    }
+}
+ @keyframes roll-out {
+     0% {
+        width: 0;
+    }
+     100% {
+        width: 100%;
+    }
+}
+ .parallax {
+    /* The image used */
+     background-image: url("https://webdesignerdepot.s3.amazonaws.com/default-images/25.jpg");
+    /* Set a specific height */
+     min-height: 700px;
+    /* Create the parallax scrolling effect */
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+/* The actual timeline (the vertical ruler) */
+ .timeline {
+     position: relative;
+     max-width: 1200px;
+     margin: 0 auto;
+}
+/* The actual timeline (the vertical ruler) */
+ .timeline::after {
+     content: '';
+     position: absolute;
+     width: 6px;
+     background-color: white;
+     top: 0;
+     bottom: 0;
+     left: 50%;
+     margin-left: -3px;
+}
+/* Container around content */
+ .container {
+     padding: 10px 40px;
+     position: relative;
+     background-color: inherit;
+     width: 50%;
+}
+/* The circles on the timeline */
+ .container::after {
+     content: '';
+     position: absolute;
+     width: 25px;
+     height: 25px;
+     right: -17px;
+     background-color: white;
+     border: 4px solid #FF9F55;
+     top: 15px;
+     border-radius: 50%;
+     z-index: 1;
+}
+/* Place the container to the left */
+ .left {
+     left: 0;
+}
+/* Place the container to the right */
+ .right {
+     left: 50%;
+}
+/* Add arrows to the left container (pointing right) */
+ .left::before {
+     content: " ";
+     height: 0;
+     position: absolute;
+     top: 22px;
+     width: 0;
+     z-index: 1;
+     right: 30px;
+     border: medium solid white;
+     border-width: 10px 0 10px 10px;
+     border-color: transparent transparent transparent white;
+}
+/* Add arrows to the right container (pointing left) */
+ .right::before {
+     content: " ";
+     height: 0;
+     position: absolute;
+     top: 22px;
+     width: 0;
+     z-index: 1;
+     left: 30px;
+     border: medium solid white;
+     border-width: 10px 10px 10px 0;
+     border-color: transparent white transparent transparent;
+}
+/* Fix the circle for containers on the right side */
+ .right::after {
+     left: -16px;
+}
+/* The actual content */
+ .content {
+     padding: 20px 30px;
+     background-color: white;
+     position: relative;
+     border-radius: 6px;
+     color:black;
+}
+ .extra-wide-column {
+     background: #2193b0;
+    /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+    /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #6dd5ed, #2193b0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     border: 1px solid rgba(0, 0, 0, 0.8);
+     padding: 20px;
+     font-size: 30px;
+     text-align: center;
+     grid-column-start: 1;
+     grid-column-end: 4;
+}
+/* Media queries - Responsive timeline on screens less than 600px wide */
+ @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+     .timeline::after {
+         left: 31px;
+    }
+    /* Full-width containers */
+     .container {
+         width: 100%;
+         padding-left: 70px;
+         padding-right: 25px;
+    }
+    /* Make sure that all arrows are pointing leftwards */
+     .container::before {
+         left: 60px;
+         border: medium solid white;
+         border-width: 10px 10px 10px 0;
+         border-color: transparent white transparent transparent;
+    }
+    /* Make sure all circles are at the same spot */
+     .left::after, .right::after {
+         left: 15px;
+    }
+    /* Make all right containers behave like the left ones */
+     .right {
+         left: 0%;
+    }
+}
+ @media (max-width: 767px) {
+     .grid-container1 {
+         display: grid;
+         grid-template-columns: 1fr;
+    }
+     .grid-container2 {
+         display: grid;
+         grid-template-columns: 1fr;
+    }
+     .project-container {
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-column-start: 1;
+         grid-column-end: 2;
+    }
+     .wide-column {
+         grid-column-start: 1;
+         grid-column-end: 2;
+    }
+     .extra-wide-column {
+         grid-column-start: 1;
+         grid-column-end: 2;
+    }
+     .bar{
+         height: 30%;
+        /* top: 70vw;
+        */
+    }
+     .hero h1{
+         font-size: 10vw;
+        /* top: 75vw;
+        */
+    }
+     .hero p{
+         font-size: 5vw;
+        /* top: 85vw;
+        */
+    }
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>PORTFOLIO</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body>
+      <div class="grid-container1">
+         <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+               <a href="#">About</a>
+               <a href="#technical">Technical Skills</a>
+               <a href="#projects">Projects</a>
+               <a href="#contact">Contact</a>
+            </div>
+         </div>
+         <div class="hero-container">
+            <main>
+               <div class="stickyHeader">
+                  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+               </div>
+               <div class="hero parallax">
+                  <img id="np-icon" src="images/icon_np.png">
+                  <h1>NIKHITA PATIL</h1>
+                  <p>FULL STACK DEVELOPER</p>
+                  <button onclick="window.open('resume.pdf')">Download Resume</button>
+                  <div class="bar"></div>
+               </div>
+            </main>
+         </div>
+      </div>
+      <div class="grid-container2">
+         <div class="grid-item">
+            <div class="profile-card">
+               <img src="images/profile.png" alt="Profile Picture" style="width:100%">
+               <h2>Nikhita Patil</h2>
+               <p class="title">Full Stack Developer</p>
+               <p>Pace University</p>
+               <div style="margin: 24px 0;">
+                  <a href="#"><i class="fa fa-twitter"></i></a>  
+                  <a href="#"><i class="fa fa-linkedin"></i></a>  
+                  <a href="#"><i class="fa fa-facebook"></i></a> 
+               </div>
+               <p><a class="button" href="https://linkedin.com/in/nikhita-patil-0b074045/" >View LinkedIn</a></p>
+            </div>
+         </div>
+         <div class="grid-item">
+            <h1>ABOUT ME</h1>
+            <h3><i>"Live To Code , Code To Live"</i></h3>
+            <p style="text-align: left">I’m a full stack developer.I have completed my under graduation in India in Information Technology.Currently , I am pursuing my Masters in Computer Science at Pace University.<br> I have 4 years of industry experience as software developer in India. <br>Coding has always been a passion.I love delivering defect free quality code with precision.I love solving challenges on coding and browsing about the latest cutting edge technologies. </p>
+         </div>
+         <div class="grid-item" >
+            <h2>Work Experience</h2>
+            <div class="grid-container3">
+               <div class="grid-item">Infosys Limited<br> 3 years<br>Sr. Systems Engineer</div>
+               <div class="grid-item">NICE Systems<br> 1.5 years<br>Software Developer</div>
+               <div class="grid-item">Pace University<br> Masters</div>
+            </div>
+         </div>
+         <div class="wide-column">
+            <h1 id="technical"> Technical Skills</h1>
+            <div class="skillbar clearfix " data-percent="90%">
+               <div class="skillbar-title" style="background: cyan;"><span>JAVA</span></div>
+               <div class="skillbar-bar" style="background: cyan;"></div>
+               <div class="skill-bar-percent">90%</div>
+            </div>
+            <div class="skillbar clearfix " data-percent="100%">
+               <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+               <div class="skillbar-bar" style="background: #e67e22;"></div>
+               <div class="skill-bar-percent">100%</div>
+            </div>
+            <!-- End Skill Bar -->
+            <div class="skillbar clearfix " data-percent="80%">
+               <div class="skillbar-title" style="background: #2980b9;"><span>CSS</span></div>
+               <div class="skillbar-bar" style="background: #3498db;"></div>
+               <div class="skill-bar-percent">100%</div>
+            </div>
+            <!-- End Skill Bar -->
+            <div class="skillbar clearfix " data-percent="90%">
+               <div class="skillbar-title" style="background: red;"><span>REST</span></div>
+               <div class="skillbar-bar" style="background: red;"></div>
+               <div class="skill-bar-percent">90%</div>
+            </div>
+            <!-- End Skill Bar -->
+            <!-- End Skill Bar -->
+            <div class="skillbar clearfix " data-percent="70%">
+               <div class="skillbar-title" style="background: green;"><span>JAVASCRIPT</span></div>
+               <div class="skillbar-bar" style="background: green;"></div>
+               <div class="skill-bar-percent">70%</div>
+            </div>
+            <!-- End Skill Bar -->
+         </div>
+         <div class="grid-item">
+            <h3>Awards</h3>
+            <img src="images/banner.jpg" style="width:100%;height:100px">
+            <img src="images/spark-winners.jpg" style="width:100%;height:200px" >
+            <h3>Product Improvement - Elastic Search</h3>
+         </div>
+         <center>
+            <h1 id="projects">My Recent Work</h1>
+         </center>
+         <div class="project-container">
+            <div class="project-item">
+               <div class="container-proj">
+                  <img src="images/gridproject.png" alt="Grid Project" class="image" style="width:100%;height:300px">
+                  <div style="color:black; font-size: 20px">A responsive web page using grid layout displaying electronic products in a store and their details<br>
+                     <b>Technologies: HTML, CSS </b>
+                  </div>
+                  <div class="middle">
+                     <div class="overlay-text">
+                        <h3><a target=_blank href="http://webpage.pace.edu/np07024n/CS641/Assignment2/assignment2.html">GRID LAYOUT CSS</a></h3>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="project-item">
+               <div class="container-proj">
+                  <img src="images/reactprogram.png" alt="React Project" class="image" style="width:100%;height:300px">
+                  <div style="color:black; font-size: 20px">A single page web application to provide tourists information of the places visited around the world.<br>
+                     <b>Technologies: React JS, HTML, CSS </b>
+                  </div>
+                  <div class="middle">
+                     <div class="overlay-text">
+                        <h3><a target=_blank href="https://screencast-o-matic.com/watch/cFfjYTDs7b">REACT JS</a></h3>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="project-item">
+               <div class="container-proj">
+                  <img src="images/canvas.png" alt="Canvas" class="image" style="width:100%;height:300px">
+                  <div style="color:black; font-size: 20px">Created a paint application using HTML5 canvas that draws graphics as the user draws on a screen with their finger or follows the mouse pointer to create graphics on phone or laptop screen.<br>
+                     <b>Technologies:HTML, CSS, JavaScript	 </b>
+                  </div>
+                  <div class="middle">
+                     <div class="overlay-text">
+                        <h3><a target=_blank href="http://webpage.pace.edu/np07024n/CS641/Assignment3/assignment3.html">CANVAS HTML</a></h3>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="project-item">
+               <div class="container-proj">
+                  <img src="images/riley-mobile.jpg" alt="riley" class="image" style="width:100%;height:300px">
+                  <div style="color:black; font-size: 20px">Replicated a Bridget Riley painting on HTML canvas and supported it with device motion. The canvas painting responsively changes as you move your phone from side to side, or up and down.<br>
+                     <b>Technologies: HTML, CSS, JavaScript</b>
+                  </div>
+                  <div class="middle">
+                     <div class="overlay-text">
+                        <h3><a target=_blank href="http://webpage.pace.edu/np07024n/CS641/Assignment6/assignment6.html">DEVICE MOTION CANVAS</a></h3>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="project-item">
+               <div class="container-proj">
+                  <img src="images/debtfinder.png" alt="debtfinder" class="image" style="width:100%;height:300px">
+                  <div style="color:black; font-size: 20px">Developed an ionic mobile application to help international students find universities and the debt per city based on GRE score and city.<br>
+                     <b>Technologies: IONIC, HTML, CSS, JavaScript</b>
+                  </div>
+                  <div class="middle">
+                     <div class="overlay-text">
+                        <h3><a target=_blank href="http://webpage.pace.edu/np07024n/CS641/Project/www">IONIC APPLICATION</a></h3>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="project-item">
+               <div class="container-proj">
+                  <img src="images/countryexplorer.png" alt="countryexplorer" class="image" style="width:100%;height:300px">
+                  <div style="color:black; font-size: 20px">Developed an ionic mobile application to display, search and filter countries in the world using external public API.<br>
+                     <b>Technologies: IONIC, HTML, CSS, JavaScript</b>
+                  </div>
+                  <div class="middle">
+                     <div class="overlay-text">
+                        <h3><a target=_blank href="http://webpage.pace.edu/np07024n/CS641/Assignment10/www">COUNTRY EXPLORER</a></h3>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <H1> TESTIMONIALS </H1>
+      <div class="slideshow-container">
+         <div class="mySlides">
+            <q>Nikhita is one of the talented resource I had worked with. She has high potential and quick learner. Her positive attitude willing to learn new things has helped her to contribute in many product areas.</q>
+            <p class="author">- Technical Manager, NICE SYSTEMS</p>
+         </div>
+         <div class="mySlides">
+            <q>Nikhita is hardworking and sincere in her work. She always was on top of her work.</q>
+            <p class="author">- Technology Lead, INFOSYS LIMITED</p>
+         </div>
+         <div class="mySlides">
+            <q>Nikhita has excellent analytical abilities and great coding skills. She thinks through all the possibilities and ensures that the design is full proof. I was impressed with her design skills which are quite good and considering her overall experience.</q>
+            <p class="author">- Principal Software Architect, NICE SYSTEMS</p>
+         </div>
+         <a class="prev" onclick="plusSlides(-1)">❮</a>
+         <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <div class="dot-container">
+         <span class="dot" onclick="currentSlide(1)"></span> 
+         <span class="dot" onclick="currentSlide(2)"></span> 
+         <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      <H1> CONTACT ME </H1>
+      <div class="project-container">
+         <div class="project-item">
+            <div style="width: 100%"><iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=new%20york+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Plot a route map</a></iframe></div>
+            <h2 style="color:black"><i class="fa fa-map-marker"></i> New York, NY</h2>
+         </div>
+         <div class="project-item">
+            <img src="images/contactmejpg.jpg" width="100%" height="400px">
+            <h2 style="color:black"><i class="fa fa-envelope"></i> nikhita.asp@gmail.com</h2>
+            <h2 style="color:black"><i class="fa fa-phone-square"></i> 201-744-1624</h2>
+         </div>
+         <div class="project-item">
+            <p style="color:black">Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+            <formtarget="_blank">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+               <div >
+                  <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+               </div>
+               <div>
+                  <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+               </div>
+            </div>
+            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+            <button class="w3-button w3-black w3-right w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+            </form>
+         </div>
+      </div>
+      <script>
+         var slideIndex = 1;
+         showSlides(slideIndex);
+         
+         function plusSlides(n) {
+           showSlides(slideIndex += n);
+         }
+         
+         function currentSlide(n) {
+           showSlides(slideIndex = n);
+         }
+         
+         function showSlides(n) {
+           var i;
+           var slides = document.getElementsByClassName("mySlides");
+           var dots = document.getElementsByClassName("dot");
+           if (n > slides.length) {slideIndex = 1}    
+           if (n < 1) {slideIndex = slides.length}
+           for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";  
+           }
+           for (i = 0; i < dots.length; i++) {
+               dots[i].className = dots[i].className.replace(" active", "");
+           }
+           slides[slideIndex-1].style.display = "block";  
+           dots[slideIndex-1].className += " active";
+         }
+      </script>
+       <script type="text/javascript">
+         function openNav() {
+         document.getElementById("myNav").style.width = "100%";
+         }
+         
+         function closeNav() {
+         document.getElementById("myNav").style.width = "0%";
+         }
+         jQuery(document).ready(function(){
+         jQuery('.skillbar').each(function(){
+         jQuery(this).find('.skillbar-bar').animate({
+          width:jQuery(this).attr('data-percent')
+         },6000);
+         });
+         });      
+         $("#button").click(function() {
+         $('.transform').toggleClass('transform-active');
+         }); 
+         
+      </script>
+      <footer>
+         <h1>&copy; Nikhita Patil 2018</h1>
+      </footer>
+   </body>
+</html>
